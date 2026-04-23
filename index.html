@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>A Revolta de Canudos (1896-1897) — Trabalho de História</title>
+    <meta
+      name="description"
+      content="Trabalho escolar sobre a Guerra de Canudos: contexto, Antônio Conselheiro, as quatro expedições militares e o legado da resistência sertaneja no interior da Bahia."
+    />
+    <meta property="og:title" content="A Revolta de Canudos (1896-1897)" />
+    <meta property="og:description" content="Contexto, causas, expedições e legado da Guerra de Canudos." />
+    <meta property="og:image" content="src/assets/canudos-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="src/assets/canudos-hero.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['"Cormorant Garamond"', "Georgia", "serif"],
+              body: ['Inter', "system-ui", "sans-serif"],
+            },
+            colors: {
+              background: "var(--background)",
+              foreground: "var(--foreground)",
+              card: "var(--card)",
+              "card-foreground": "var(--card-foreground)",
+              primary: "var(--primary)",
+              "primary-foreground": "var(--primary-foreground)",
+              secondary: "var(--secondary)",
+              "secondary-foreground": "var(--secondary-foreground)",
+              muted: "var(--muted)",
+              "muted-foreground": "var(--muted-foreground)",
+              accent: "var(--accent)",
+              "accent-foreground": "var(--accent-foreground)",
+              destructive: "var(--destructive)",
+              "destructive-foreground": "var(--destructive-foreground)",
+              border: "var(--border)",
+            },
+            boxShadow: {
+              soft: "0 4px 20px -4px oklch(0.22 0.04 40 / 0.15)",
+              elegant: "0 10px 40px -10px oklch(0.22 0.04 40 / 0.3)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root {
+        --background: oklch(0.96 0.02 80);
+        --foreground: oklch(0.22 0.04 40);
+        --card: oklch(0.98 0.015 80);
+        --card-foreground: oklch(0.22 0.04 40);
+        --primary: oklch(0.45 0.13 40);
+        --primary-foreground: oklch(0.97 0.02 80);
+        --secondary: oklch(0.9 0.04 75);
+        --secondary-foreground: oklch(0.28 0.06 40);
+        --muted: oklch(0.92 0.025 80);
+        --muted-foreground: oklch(0.45 0.05 50);
+        --accent: oklch(0.65 0.15 50);
+        --accent-foreground: oklch(0.98 0.015 80);
+        --destructive: oklch(0.5 0.2 30);
+        --destructive-foreground: oklch(0.98 0.015 80);
+        --border: oklch(0.85 0.04 70);
+      }
+      body {
+        background-color: var(--background);
+        color: var(--foreground);
+        font-family: 'Inter', system-ui, sans-serif;
+        font-feature-settings: "ss01", "cv11";
+      }
+      h1, h2, h3, h4 {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        letter-spacing: -0.02em;
+      }
+      .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
+      .font-body { font-family: 'Inter', system-ui, sans-serif; }
+      .bg-gradient-hero {
+        background: linear-gradient(180deg, oklch(0.22 0.04 40 / 0.2) 0%, oklch(0.22 0.04 40 / 0.85) 100%);
+      }
+      .paper-texture {
+        background-image:
+          radial-gradient(circle at 20% 30%, oklch(0.85 0.04 70 / 0.3) 0%, transparent 50%),
+          radial-gradient(circle at 80% 70%, oklch(0.85 0.04 70 / 0.2) 0%, transparent 50%);
+      }
+      .shadow-elegant { box-shadow: 0 10px 40px -10px oklch(0.22 0.04 40 / 0.3); }
+      .shadow-soft { box-shadow: 0 4px 20px -4px oklch(0.22 0.04 40 / 0.15); }
+      .border-accent { border-color: var(--accent); }
+      .border-destructive\/40 { border-color: oklch(0.5 0.2 30 / 0.4); }
+      .bg-destructive\/5 { background-color: oklch(0.5 0.2 30 / 0.05); }
+      .bg-secondary\/40 { background-color: oklch(0.9 0.04 75 / 0.4); }
+      .bg-secondary\/50 { background-color: oklch(0.9 0.04 75 / 0.5); }
+      .text-foreground\/85 { color: oklch(0.22 0.04 40 / 0.85); }
+      .text-foreground\/90 { color: oklch(0.22 0.04 40 / 0.9); }
+      .text-background\/70 { color: oklch(0.96 0.02 80 / 0.7); }
+      .text-background\/80 { color: oklch(0.96 0.02 80 / 0.8); }
+      .text-background\/90 { color: oklch(0.96 0.02 80 / 0.9); }
+      .bg-accent { background-color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen bg-background paper-texture">
+      <!-- HERO -->
+      <header class="relative h-[92vh] min-h-[600px] w-full overflow-hidden">
+        <img
+          src="src/assets/canudos-hero.jpg"
+          alt="Ilustração do arraial de Canudos no sertão baiano"
+          width="1536"
+          height="1024"
+          class="absolute inset-0 h-full w-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-hero"></div>
+        <div class="relative z-10 mx-auto flex h-full max-w-5xl flex-col justify-end px-6 pb-20">
+          <p class="mb-4 font-body text-sm uppercase tracking-[0.3em] text-background/80">
+            Trabalho de História · Brasil República
+          </p>
+          <h1 class="font-display text-5xl font-semibold leading-[1.05] text-background sm:text-7xl md:text-8xl">
+            A Revolta<br />
+            <em class="font-normal italic" style="color: var(--accent)">de Canudos</em>
+          </h1>
+          <p class="mt-6 max-w-2xl font-display text-xl leading-relaxed text-background/90 sm:text-2xl">
+            Sertão da Bahia, 1896–1897. A história de um arraial que desafiou a República e foi destruído em uma das guerras mais sangrentas do Brasil.
+          </p>
+          <div class="mt-10 flex items-center gap-3 text-background/70">
+            <div class="h-px w-12 bg-accent"></div>
+            <span class="font-body text-xs uppercase tracking-widest">Role para começar</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="mx-auto max-w-4xl px-6 py-20 sm:py-28">
+        <!-- 01 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">01</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">O que foi a Revolta de Canudos?</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>A <strong>Guerra de Canudos</strong> foi um conflito armado ocorrido entre 1896 e 1897 no sertão da Bahia, no povoado de Canudos. De um lado, os sertanejos liderados pelo beato <strong>Antônio Conselheiro</strong>; do outro, o Exército da recém-proclamada República brasileira.</p>
+            <p>O arraial chegou a abrigar mais de <strong>25 mil pessoas</strong>, tornando-se a segunda maior cidade da Bahia na época. Foi destruído após quatro expedições militares, deixando milhares de mortos.</p>
+          </div>
+        </section>
+
+        <!-- 02 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">02</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">Contexto histórico</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>No final do século XIX, o Nordeste brasileiro vivia uma realidade dura: seca, fome, miséria, concentração de terras nas mãos de poucos coronéis e o abandono pelo poder público. A recém-proclamada República (1889) não trouxe melhorias para o sertanejo pobre.</p>
+            <ul class="space-y-3 border-l-2 border-accent pl-6">
+              <li><strong>Seca e miséria</strong> no sertão nordestino</li>
+              <li><strong>Fim da escravidão (1888)</strong> sem políticas de inclusão</li>
+              <li><strong>Cobrança de impostos</strong> pela nova República</li>
+              <li><strong>Separação entre Igreja e Estado</strong>, vista como ofensa</li>
+              <li><strong>Coronelismo</strong> e violência no campo</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 03 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">03</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">Antônio Conselheiro</h2>
+          <div class="grid gap-10 md:grid-cols-[1fr_1.5fr] md:items-start">
+            <figure class="overflow-hidden rounded-sm shadow-elegant">
+              <img src="src/assets/conselheiro.jpg" alt="Retrato de Antônio Conselheiro" width="768" height="1024" loading="lazy" class="h-full w-full object-cover" />
+              <figcaption class="px-4 py-3 font-body text-xs uppercase tracking-wider" style="background-color: var(--secondary); color: var(--secondary-foreground)">
+                Antônio Vicente Mendes Maciel · 1830–1897
+              </figcaption>
+            </figure>
+            <div class="space-y-4 text-lg leading-relaxed text-foreground/85">
+              <p>Nascido no Ceará, <strong>Antônio Vicente Mendes Maciel</strong> tornou-se peregrino pelo sertão pregando a fé católica, criticando a República e prometendo justiça aos pobres. Era visto como santo pelos sertanejos e como fanático perigoso pelas elites.</p>
+              <p>Em 1893, fundou o arraial de <strong>Belo Monte</strong>, conhecido como Canudos, em uma fazenda abandonada. Lá, organizou uma comunidade baseada na fé, no trabalho coletivo e na vida simples.</p>
+              <blockquote class="border-l-4 border-accent bg-secondary/50 p-5 font-display text-xl italic" style="color: var(--secondary-foreground)">
+                "A República não pode prevalecer, porque está em desacordo com as leis de Deus."
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        <!-- 04 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">04</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">As quatro expedições</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p class="mb-8">O governo enviou <strong>quatro expedições militares</strong> para destruir Canudos. As três primeiras foram derrotadas pelos sertanejos.</p>
+            <div class="space-y-6">
+              <div class="rounded-sm border p-6 shadow-soft" style="background-color: var(--card); border-color: var(--border)">
+                <div class="mb-2 flex items-baseline gap-4">
+                  <span class="font-display text-3xl font-semibold" style="color: var(--primary)">1ª</span>
+                  <span class="font-body text-xs uppercase tracking-widest" style="color: var(--muted-foreground)">Novembro de 1896</span>
+                </div>
+                <p class="text-foreground/85">100 soldados sob o tenente Pires Ferreira. Derrotados em Uauá.</p>
+              </div>
+              <div class="rounded-sm border p-6 shadow-soft" style="background-color: var(--card); border-color: var(--border)">
+                <div class="mb-2 flex items-baseline gap-4">
+                  <span class="font-display text-3xl font-semibold" style="color: var(--primary)">2ª</span>
+                  <span class="font-body text-xs uppercase tracking-widest" style="color: var(--muted-foreground)">Janeiro de 1897</span>
+                </div>
+                <p class="text-foreground/85">560 homens liderados pelo major Febrônio de Brito. Vencidos no Cambaio.</p>
+              </div>
+              <div class="rounded-sm border p-6 shadow-soft" style="background-color: var(--card); border-color: var(--border)">
+                <div class="mb-2 flex items-baseline gap-4">
+                  <span class="font-display text-3xl font-semibold" style="color: var(--primary)">3ª</span>
+                  <span class="font-body text-xs uppercase tracking-widest" style="color: var(--muted-foreground)">Março de 1897</span>
+                </div>
+                <p class="text-foreground/85">1.300 soldados sob o coronel Moreira César, herói da República. Morto em combate; tropa em fuga.</p>
+              </div>
+              <div class="rounded-sm border border-destructive/40 bg-destructive/5 p-6 shadow-soft">
+                <div class="mb-2 flex items-baseline gap-4">
+                  <span class="font-display text-3xl font-semibold" style="color: var(--primary)">4ª</span>
+                  <span class="font-body text-xs uppercase tracking-widest" style="color: var(--muted-foreground)">Junho a Outubro de 1897</span>
+                </div>
+                <p class="text-foreground/85">Mais de 8.000 soldados, com artilharia pesada. Após meses de cerco, Canudos foi totalmente destruída em 5 de outubro de 1897.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 05 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">05</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">O fim do arraial</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>Em <strong>5 de outubro de 1897</strong>, os últimos quatro defensores — "um velho, dois homens feitos e uma criança" — foram mortos. Canudos foi queimada, suas casas demolidas e a cabeça de Antônio Conselheiro decepada e exibida publicamente.</p>
+            <p>Estima-se que entre <strong>15 mil e 25 mil sertanejos</strong> morreram. Mulheres e crianças sobreviventes foram levados como prisioneiros; muitos desapareceram no caminho.</p>
+          </div>
+        </section>
+
+        <!-- 06 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">06</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">Legado e Os Sertões</h2>
+          <div class="space-y-5 text-lg leading-relaxed text-foreground/85">
+            <p>O jornalista <strong>Euclides da Cunha</strong> acompanhou a quarta expedição como correspondente. Suas observações resultaram no livro <em>Os Sertões</em> (1902), obra-prima da literatura brasileira que denunciou a violência do Estado e revelou ao Brasil a realidade do sertanejo.</p>
+            <blockquote class="my-6 border-l-4 border-accent bg-secondary/50 p-6 font-display text-2xl italic leading-snug" style="color: var(--secondary-foreground)">
+              "O sertanejo é, antes de tudo, um forte."
+              <footer class="mt-2 font-body text-sm not-italic" style="color: var(--muted-foreground)">— Euclides da Cunha, Os Sertões</footer>
+            </blockquote>
+            <p>Canudos tornou-se símbolo da <strong>resistência popular</strong>, da desigualdade social brasileira e do conflito entre o Brasil litorâneo, urbano e moderno, e o Brasil sertanejo, esquecido e empobrecido.</p>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section class="mb-20 scroll-mt-20">
+          <div class="mb-6 flex items-baseline gap-4">
+            <span class="font-display text-sm font-medium tracking-widest" style="color: var(--accent)">07</span>
+            <div class="h-px flex-1" style="background-color: var(--border)"></div>
+          </div>
+          <h2 class="mb-8 font-display text-4xl font-semibold leading-tight text-foreground sm:text-5xl">Linha do tempo</h2>
+          <ol class="space-y-4">
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">1893</span><span class="text-foreground/90">Antônio Conselheiro funda o arraial de Belo Monte (Canudos).</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">1896</span><span class="text-foreground/90">Conflito com autoridades de Juazeiro inicia a guerra.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">Nov 1896</span><span class="text-foreground/90">1ª Expedição é derrotada em Uauá.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">Jan 1897</span><span class="text-foreground/90">2ª Expedição vencida no Cambaio.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">Mar 1897</span><span class="text-foreground/90">3ª Expedição: morre o coronel Moreira César.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">Jun–Out 1897</span><span class="text-foreground/90">4ª Expedição cerca e destrói Canudos.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">5 Out 1897</span><span class="text-foreground/90">Queda final do arraial.</span></li>
+            <li class="flex gap-6 border-b pb-4" style="border-color: var(--border)"><span class="w-32 shrink-0 font-display text-lg font-semibold" style="color: var(--primary)">1902</span><span class="text-foreground/90">Publicação de Os Sertões, de Euclides da Cunha.</span></li>
+          </ol>
+        </section>
+      </main>
+
+      <footer class="border-t bg-secondary/40 py-10" style="border-color: var(--border)">
+        <div class="mx-auto max-w-4xl px-6 text-center font-body text-sm" style="color: var(--muted-foreground)">
+          <p>Trabalho escolar de História — A Revolta de Canudos (1896–1897)</p>
+          <p class="mt-2 text-xs">Fontes: <em>Os Sertões</em>, de Euclides da Cunha · Memorial de Canudos · UFBA</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
